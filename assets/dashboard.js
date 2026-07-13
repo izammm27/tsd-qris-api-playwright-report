@@ -1,12 +1,15 @@
 const dashboardData = JSON.parse(document.getElementById('dashboard-data').textContent);
-let state = {
+const defaultState = {
   search: '',
   module: 'All modules',
   category: 'All categories',
   status: 'All statuses',
   sort: 'id',
-  failedOnly: true
+  failedOnly: true,
+  page: 1,
+  pageSize: '25'
 };
+let state = { ...defaultState };
 
 const statusClass = {
   PASSED: 'status-passed',
@@ -165,12 +168,69 @@ function filteredTests() {
   return tests;
 }
 
-function renderTable() {
+function currentPageSize(total) {
+  if (state.pageSize === 'all') return Math.max(total, 1);
+  return Number(state.pageSize) || 25;
+}
+
+function paginatedTests() {
   const tests = filteredTests();
+  const total = tests.length;
+  const pageSize = currentPageSize(total);
+  const totalPages = state.pageSize === 'all' ? 1 : Math.max(1, Math.ceil(total / pageSize));
+  state.page = Math.min(Math.max(state.page, 1), totalPages);
+  const start = total === 0 ? 0 : (state.page - 1) * pageSize;
+  const end = state.pageSize === 'all' ? total : Math.min(start + pageSize, total);
+
+  return {
+    allFiltered: tests,
+    pageItems: tests.slice(start, end),
+    start,
+    end,
+    total,
+    totalPages
+  };
+}
+
+function updateFailedOnlyButton() {
+  document.getElementById('failedOnlyButton').textContent = state.failedOnly ? 'Show All' : 'Show Failed Only';
+}
+
+function updatePagination(result) {
+  const totalTests = dashboardData.tests.length;
+  const visibleStart = result.total === 0 ? 0 : result.start + 1;
+  document.getElementById('tableResultSummary').textContent =
+    'Showing ' +
+    visibleStart +
+    '-' +
+    result.end +
+    ' of ' +
+    result.total +
+    ' filtered tests (' +
+    totalTests +
+    ' total)';
+  document.getElementById('pageInfo').textContent = 'Page ' + state.page + ' of ' + result.totalPages;
+
+  const isFirst = state.page <= 1;
+  const isLast = state.page >= result.totalPages;
+  document.getElementById('firstPageButton').disabled = isFirst;
+  document.getElementById('prevPageButton').disabled = isFirst;
+  document.getElementById('nextPageButton').disabled = isLast;
+  document.getElementById('lastPageButton').disabled = isLast;
+}
+
+function resetPageAndRender() {
+  state.page = 1;
+  renderTable();
+}
+
+function renderTable() {
+  const result = paginatedTests();
+  const tests = result.pageItems;
   document.getElementById('failedTableBody').innerHTML =
     tests
       .map((test, index) => {
-        const evidenceId = 'evidence-' + index;
+        const evidenceId = 'evidence-' + (result.start + index);
         return (
           '<tr><td><strong>' +
           escapeHtml(test.id) +
@@ -212,6 +272,8 @@ function renderTable() {
         );
       })
       .join('') || '<tr><td colspan="15">No test cases match the current filter.</td></tr>';
+
+  updatePagination(result);
 
   document.querySelectorAll('[data-toggle]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -268,37 +330,65 @@ function evidenceBlock(title, value, id) {
 function bindEvents() {
   document.getElementById('searchInput').addEventListener('input', (event) => {
     state.search = event.target.value;
-    renderTable();
+    resetPageAndRender();
   });
   document.getElementById('moduleFilter').addEventListener('change', (event) => {
     state.module = event.target.value;
-    renderTable();
+    resetPageAndRender();
   });
   document.getElementById('categoryFilter').addEventListener('change', (event) => {
     state.category = event.target.value;
-    renderTable();
+    resetPageAndRender();
   });
   document.getElementById('statusFilter').addEventListener('change', (event) => {
     state.status = event.target.value;
-    renderTable();
+    state.failedOnly = false;
+    updateFailedOnlyButton();
+    resetPageAndRender();
   });
   document.getElementById('sortSelect').addEventListener('change', (event) => {
     state.sort = event.target.value;
+    resetPageAndRender();
+  });
+  document.getElementById('pageSizeSelect').addEventListener('change', (event) => {
+    state.pageSize = event.target.value;
+    resetPageAndRender();
+  });
+  document.getElementById('firstPageButton').addEventListener('click', () => {
+    state.page = 1;
+    renderTable();
+  });
+  document.getElementById('prevPageButton').addEventListener('click', () => {
+    state.page -= 1;
+    renderTable();
+  });
+  document.getElementById('nextPageButton').addEventListener('click', () => {
+    state.page += 1;
+    renderTable();
+  });
+  document.getElementById('lastPageButton').addEventListener('click', () => {
+    const result = paginatedTests();
+    state.page = result.totalPages;
     renderTable();
   });
   document.getElementById('failedOnlyButton').addEventListener('click', () => {
     state.failedOnly = !state.failedOnly;
-    document.getElementById('failedOnlyButton').textContent = state.failedOnly ? 'Show All' : 'Show Failed Only';
-    renderTable();
+    if (state.failedOnly) {
+      state.status = 'All statuses';
+      document.getElementById('statusFilter').value = state.status;
+    }
+    updateFailedOnlyButton();
+    resetPageAndRender();
   });
   document.getElementById('resetButton').addEventListener('click', () => {
-    state = { search: '', module: 'All modules', category: 'All categories', status: 'All statuses', sort: 'id', failedOnly: true };
+    state = { ...defaultState };
     document.getElementById('searchInput').value = '';
     document.getElementById('moduleFilter').value = state.module;
     document.getElementById('categoryFilter').value = state.category;
     document.getElementById('statusFilter').value = state.status;
     document.getElementById('sortSelect').value = state.sort;
-    document.getElementById('failedOnlyButton').textContent = 'Show All';
+    document.getElementById('pageSizeSelect').value = state.pageSize;
+    updateFailedOnlyButton();
     renderTable();
   });
 }
@@ -310,5 +400,5 @@ renderChart('moduleChart', dashboardData.modules);
 renderChart('categoryChart', dashboardData.categories);
 populateFilters();
 bindEvents();
-document.getElementById('failedOnlyButton').textContent = 'Show All';
+updateFailedOnlyButton();
 renderTable();
