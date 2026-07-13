@@ -1,0 +1,1123 @@
+<testsuites id="" name="" tests="30" failures="17" skipped="0" errors="2" time="77.53995199999999">
+<testsuite name="api/get-token/get-token.smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-get-token" tests="6" failures="5" skipped="0" time="7.28" errors="0">
+<testcase name="Get Token B2B smoke › GT-SMK-001 - request valid mengembalikan token dan field kontrak / valid request returns token and contract fields" classname="api/get-token/get-token.smoke.spec.ts" time="1.45">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-6ea05-s-token-and-contract-fields-api-get-token/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-6ea05-s-token-and-contract-fields-api-get-token-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-get-token] › api/get-token/get-token.smoke.spec.ts:9:7 › Get Token B2B smoke › GT-SMK-001 - request valid mengembalikan token dan field kontrak / valid request returns token and contract fields › Assert 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:30:30
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:25:7
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-6ea05-s-token-and-contract-fields-api-get-token/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:30:30
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:25:7
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-6ea05-s-token-and-contract-fields-api-get-token-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Get Token B2B smoke › GT-SMK-002 - dua request token berurutan berhasil / two consecutive token requests succeed" classname="api/get-token/get-token.smoke.spec.ts" time="1.746">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-638c1-tive-token-requests-succeed-api-get-token/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-638c1-tive-token-requests-succeed-api-get-token-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-get-token] › api/get-token/get-token.smoke.spec.ts:35:7 › Get Token B2B smoke › GT-SMK-002 - dua request token berurutan berhasil / two consecutive token requests succeed 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:50:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-638c1-tive-token-requests-succeed-api-get-token/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:50:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-638c1-tive-token-requests-succeed-api-get-token-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Get Token B2B smoke › GT-SMK-003 - nama header content-type huruf kecil diterima / lowercase content-type header name is accepted" classname="api/get-token/get-token.smoke.spec.ts" time="1.348">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-7e5da-ype-header-name-is-accepted-api-get-token/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-7e5da-ype-header-name-is-accepted-api-get-token-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-get-token] › api/get-token/get-token.smoke.spec.ts:55:7 › Get Token B2B smoke › GT-SMK-003 - nama header content-type huruf kecil diterima / lowercase content-type header name is accepted 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:72:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-7e5da-ype-header-name-is-accepted-api-get-token/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:72:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-7e5da-ype-header-name-is-accepted-api-get-token-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Get Token B2B smoke › GT-SMK-004 - Content-Type application/json dengan charset utf-8 diterima bila didukung / Content-Type application/json charset utf-8 is accepted when supported" classname="api/get-token/get-token.smoke.spec.ts" time="1.358">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-8f7e7--is-accepted-when-supported-api-get-token/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-8f7e7--is-accepted-when-supported-api-get-token-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-get-token] › api/get-token/get-token.smoke.spec.ts:76:7 › Get Token B2B smoke › GT-SMK-004 - Content-Type application/json dengan charset utf-8 diterima bila didukung / Content-Type application/json charset utf-8 is accepted when supported 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:91:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-8f7e7--is-accepted-when-supported-api-get-token/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:91:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-8f7e7--is-accepted-when-supported-api-get-token-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Get Token B2B smoke › GT-SMK-005 - partnerId terdaftar dari environment diterima / valid registered partnerId from environment is accepted" classname="api/get-token/get-token.smoke.spec.ts" time="1.35">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-afd9c-rom-environment-is-accepted-api-get-token/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-get-token-get-token.sm-afd9c-rom-environment-is-accepted-api-get-token-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-get-token] › api/get-token/get-token.smoke.spec.ts:95:7 › Get Token B2B smoke › GT-SMK-005 - partnerId terdaftar dari environment diterima / valid registered partnerId from environment is accepted 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:110:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-afd9c-rom-environment-is-accepted-api-get-token/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/get-token/helpers.ts:94
+
+      92 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      93 |     )
+    > 94 |   ).toBeTruthy();
+         |     ^
+      95 |   expect(
+      96 |     responseTimestamp.length,
+      97 |     reportText(
+        at assertSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/helpers.ts:94:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/get-token/get-token.smoke.spec.ts:110:28
+
+    Error Context: ../reports/artifacts/api-get-token-get-token.sm-afd9c-rom-environment-is-accepted-api-get-token-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Get Token B2B smoke › GT-SMK-006 - signature diverifikasi lokal sebelum request dikirim / signature is verified locally before request is sent" classname="api/get-token/get-token.smoke.spec.ts" time="0.028">
+</testcase>
+</testsuite>
+<testsuite name="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-generate-qris-dynamic" tests="12" failures="10" skipped="0" time="21.888" errors="1">
+<testcase name="Generate QRIS Dynamic smoke › AUTH-TKN-001 - Generate Dynamic otomatis mengambil token ketika cache kosong / Generate Dynamic automatically gets token when cache is empty" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.702">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--001ee-s-token-when-cache-is-empty-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--001ee-s-token-when-cache-is-empty-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:7:7 › Generate QRIS Dynamic smoke › AUTH-TKN-001 - Generate Dynamic otomatis mengambil token ketika cache kosong / Generate Dynamic automatically gets token when cache is empty 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:23:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--001ee-s-token-when-cache-is-empty-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:23:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--001ee-s-token-when-cache-is-empty-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › AUTH-TKN-002 - dua request Generate Dynamic menggunakan cache token selama token valid / two Generate Dynamic requests reuse cached token while token is valid" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="2.292">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--146f0--token-while-token-is-valid-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--146f0--token-while-token-is-valid-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:27:7 › Generate QRIS Dynamic smoke › AUTH-TKN-002 - dua request Generate Dynamic menggunakan cache token selama token valid / two Generate Dynamic requests reuse cached token while token is valid 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:44:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--146f0--token-while-token-is-valid-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:44:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--146f0--token-while-token-is-valid-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › AUTH-TKN-005 - forceRefresh mengambil token baru / forceRefresh gets a fresh token" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="0.833">
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-001 - request valid dengan seluruh mandatory header dan body / valid request with all mandatory headers and body" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.065">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--a8fbc--mandatory-headers-and-body-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--a8fbc--mandatory-headers-and-body-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:64:7 › Generate QRIS Dynamic smoke › DYN-SMK-001 - request valid dengan seluruh mandatory header dan body / valid request with all mandatory headers and body 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:77:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--a8fbc--mandatory-headers-and-body-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:77:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--a8fbc--mandatory-headers-and-body-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-002 - request valid tanpa X-IP-ADDRESS optional / valid request without optional X-IP-ADDRESS" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.802">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--3070f-thout-optional-X-IP-ADDRESS-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--3070f-thout-optional-X-IP-ADDRESS-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:81:7 › Generate QRIS Dynamic smoke › DYN-SMK-002 - request valid tanpa X-IP-ADDRESS optional / valid request without optional X-IP-ADDRESS 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:91:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--3070f-thout-optional-X-IP-ADDRESS-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:91:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--3070f-thout-optional-X-IP-ADDRESS-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-003 - request valid tanpa validTime menggunakan default server bila didukung / valid request without validTime uses server default when supported" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="2.769">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--98e87-rver-default-when-supported-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--98e87-rver-default-when-supported-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<error message="apiRequestContext.fetch: read ECONNRESET" type="Error">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:95:7 › Generate QRIS Dynamic smoke › DYN-SMK-003 - request valid tanpa validTime menggunakan default server bila didukung / valid request without validTime uses server default when supported 
+
+    Error: apiRequestContext.fetch: read ECONNRESET
+    Call log:
+      - → POST https://tucanos-sayonara.cashup.id/v1.0/access-token/b2b
+        - user-agent: Playwright/1.61.1 (x64; ubuntu 24.04) node/22.23 CI/1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - Content-Type: application/json
+        - X-TIMESTAMP: 2026-07-13T14:46:31+07:00
+        - X-CLIENT-KEY: <redacted>
+        - X-SIGNATURE: <redacted>
+        - content-length: 90
+
+
+       at ../src/features/get-token/get-token.client.ts:123
+
+      121 |
+      122 |     const startedAt = Date.now();
+    > 123 |     const response = await this.request.fetch(builtRequest.endpoint, requestOptions);
+          |                                         ^
+      124 |     const responseTimeMs = Date.now() - startedAt;
+      125 |     const rawText = await response.text();
+      126 |
+        at GetTokenClient.requestToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/get-token/get-token.client.ts:123:41)
+        at Object.getToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/fixtures/api.fixture.ts:58:40)
+        at B2BTokenProvider.loadToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:50:41)
+        at B2BTokenProvider.refreshToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:40:34)
+        at B2BTokenProvider.getValidToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:25:34)
+        at GenerateQrisDynamicClient.buildValidRequest (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/generate-qris-dynamic/generate-qris-dynamic.client.ts:90:74)
+        at GenerateQrisDynamicClient.generateDynamicQris (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/generate-qris-dynamic/generate-qris-dynamic.client.ts:162:37)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:105:56
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--98e87-rver-default-when-supported-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:108:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--98e87-rver-default-when-supported-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-004 - validTime minimum 1 / validTime minimum 1" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.699">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--c0432-nimum-1-validTime-minimum-1-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--c0432-nimum-1-validTime-minimum-1-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:112:7 › Generate QRIS Dynamic smoke › DYN-SMK-004 - validTime minimum 1 / validTime minimum 1 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:122:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--c0432-nimum-1-validTime-minimum-1-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:122:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--c0432-nimum-1-validTime-minimum-1-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-005 - validTime 900 / validTime 900" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.682">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--75d5b-validTime-900-validTime-900-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--75d5b-validTime-900-validTime-900-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:126:7 › Generate QRIS Dynamic smoke › DYN-SMK-005 - validTime 900 / validTime 900 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:136:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--75d5b-validTime-900-validTime-900-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:136:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--75d5b-validTime-900-validTime-900-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-006 - validTime 3600 / validTime 3600" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.702">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--3d042-lidTime-3600-validTime-3600-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--3d042-lidTime-3600-validTime-3600-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:140:7 › Generate QRIS Dynamic smoke › DYN-SMK-006 - validTime 3600 / validTime 3600 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:150:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--3d042-lidTime-3600-validTime-3600-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:150:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--3d042-lidTime-3600-validTime-3600-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-007 - tip false / tip false" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.801">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--79b5a-K-007---tip-false-tip-false-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--79b5a-K-007---tip-false-tip-false-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:154:7 › Generate QRIS Dynamic smoke › DYN-SMK-007 - tip false / tip false 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:164:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--79b5a-K-007---tip-false-tip-false-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:164:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--79b5a-K-007---tip-false-tip-false-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-008 - tip true bila didukung / tip true when supported" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="2.659">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--efe84-ung-tip-true-when-supported-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--efe84-ung-tip-true-when-supported-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:168:7 › Generate QRIS Dynamic smoke › DYN-SMK-008 - tip true bila didukung / tip true when supported 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:178:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--efe84-ung-tip-true-when-supported-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: apiRequestContext.fetch: read ECONNRESET
+    Call log:
+      - → POST https://tucanos-sayonara.cashup.id/v1.0/access-token/b2b
+        - user-agent: Playwright/1.61.1 (x64; ubuntu 24.04) node/22.23 CI/1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - Content-Type: application/json
+        - X-TIMESTAMP: 2026-07-13T14:46:49+07:00
+        - X-CLIENT-KEY: <redacted>
+        - X-SIGNATURE: <redacted>
+        - content-length: 90
+
+
+       at ../src/features/get-token/get-token.client.ts:123
+
+      121 |
+      122 |     const startedAt = Date.now();
+    > 123 |     const response = await this.request.fetch(builtRequest.endpoint, requestOptions);
+          |                                         ^
+      124 |     const responseTimeMs = Date.now() - startedAt;
+      125 |     const rawText = await response.text();
+      126 |
+        at GetTokenClient.requestToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/get-token/get-token.client.ts:123:41)
+        at Object.getToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/fixtures/api.fixture.ts:58:40)
+        at B2BTokenProvider.loadToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:50:41)
+        at B2BTokenProvider.refreshToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:40:34)
+        at B2BTokenProvider.getValidToken (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/shared/auth/b2b-token.provider.ts:25:34)
+        at GenerateQrisDynamicClient.buildValidRequest (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/generate-qris-dynamic/generate-qris-dynamic.client.ts:90:74)
+        at GenerateQrisDynamicClient.generateDynamicQris (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/generate-qris-dynamic/generate-qris-dynamic.client.ts:162:37)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:175:56
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--efe84-ung-tip-true-when-supported-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Generate QRIS Dynamic smoke › DYN-SMK-009 - dua transaksi memakai partnerReferenceNo dan X-EXTERNAL-ID berbeda / two transactions use different partnerReferenceNo and X-EXTERNAL-ID" classname="api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts" time="1.882">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--a9cf4-ferenceNo-and-X-EXTERNAL-ID-api-generate-qris-dynamic/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-generate-qris-dynamic--a9cf4-ferenceNo-and-X-EXTERNAL-ID-api-generate-qris-dynamic-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-generate-qris-dynamic] › api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:182:7 › Generate QRIS Dynamic smoke › DYN-SMK-009 - dua transaksi memakai partnerReferenceNo dan X-EXTERNAL-ID berbeda / two transactions use different partnerReferenceNo and X-EXTERNAL-ID 
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:200:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--a9cf4-ferenceNo-and-X-EXTERNAL-ID-api-generate-qris-dynamic/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header X-TIMESTAMP wajib ada sesuai TSD / Response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/generate-qris-dynamic/helpers.ts:103
+
+      101 |       'Response header X-TIMESTAMP is mandatory in TSD'
+      102 |     )
+    > 103 |   ).toBeTruthy();
+          |     ^
+      104 |   expect(
+      105 |     responseTimestamp.length,
+      106 |     reportText(
+        at assertDynamicSuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/helpers.ts:103:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/generate-qris-dynamic/generate-qris-dynamic.smoke.spec.ts:200:35
+
+    Error Context: ../reports/artifacts/api-generate-qris-dynamic--a9cf4-ferenceNo-and-X-EXTERNAL-ID-api-generate-qris-dynamic-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="api/query-qris/query-qris.smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-query-qris" tests="2" failures="2" skipped="0" time="4.548" errors="0">
+<testcase name="Query QRIS smoke › QRY-SMK-001 - query transaksi dynamic yang baru dibuat / query newly generated dynamic transaction" classname="api/query-qris/query-qris.smoke.spec.ts" time="2.273">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-8131d-nerated-dynamic-transaction-api-query-qris/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-8131d-nerated-dynamic-transaction-api-query-qris-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-query-qris] › api/query-qris/query-qris.smoke.spec.ts:8:7 › Query QRIS smoke › QRY-SMK-001 - query transaksi dynamic yang baru dibuat / query newly generated dynamic transaction 
+
+    Error: Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/query-qris/helpers.ts:165
+
+      163 |       'Query response header X-TIMESTAMP is mandatory in TSD'
+      164 |     )
+    > 165 |   ).toBeTruthy();
+          |     ^
+      166 |   expect(
+      167 |     responseTimestamp.length,
+      168 |     reportText(
+        at assertQuerySuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/helpers.ts:165:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.smoke.spec.ts:27:33
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-8131d-nerated-dynamic-transaction-api-query-qris/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/query-qris/helpers.ts:165
+
+      163 |       'Query response header X-TIMESTAMP is mandatory in TSD'
+      164 |     )
+    > 165 |   ).toBeTruthy();
+          |     ^
+      166 |   expect(
+      167 |     responseTimestamp.length,
+      168 |     reportText(
+        at assertQuerySuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/helpers.ts:165:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.smoke.spec.ts:27:33
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-8131d-nerated-dynamic-transaction-api-query-qris-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Query QRIS smoke › QRY-SMK-002 - query valid tanpa X-IP-ADDRESS optional / valid query without optional X-IP-ADDRESS" classname="api/query-qris/query-qris.smoke.spec.ts" time="2.275">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-576da-thout-optional-X-IP-ADDRESS-api-query-qris/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-576da-thout-optional-X-IP-ADDRESS-api-query-qris-retry1/error-context.md]]
+]]>
+</system-out>
+<failure message="Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD" type="expect.toBeTruthy">
+<![CDATA[  [api-query-qris] › api/query-qris/query-qris.smoke.spec.ts:31:7 › Query QRIS smoke › QRY-SMK-002 - query valid tanpa X-IP-ADDRESS optional / valid query without optional X-IP-ADDRESS 
+
+    Error: Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/query-qris/helpers.ts:165
+
+      163 |       'Query response header X-TIMESTAMP is mandatory in TSD'
+      164 |     )
+    > 165 |   ).toBeTruthy();
+          |     ^
+      166 |   expect(
+      167 |     responseTimestamp.length,
+      168 |     reportText(
+        at assertQuerySuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/helpers.ts:165:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.smoke.spec.ts:47:33
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-576da-thout-optional-X-IP-ADDRESS-api-query-qris/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Response header Query X-TIMESTAMP wajib ada sesuai TSD / Query response header X-TIMESTAMP is mandatory in TSD
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+       at api/query-qris/helpers.ts:165
+
+      163 |       'Query response header X-TIMESTAMP is mandatory in TSD'
+      164 |     )
+    > 165 |   ).toBeTruthy();
+          |     ^
+      166 |   expect(
+      167 |     responseTimestamp.length,
+      168 |     reportText(
+        at assertQuerySuccessExchange (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/helpers.ts:165:5)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.smoke.spec.ts:47:33
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-576da-thout-optional-X-IP-ADDRESS-api-query-qris-retry1/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="api/query-qris/query-qris.status-smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-query-qris" tests="7" failures="0" skipped="0" time="10.392" errors="1">
+<testcase name="Query QRIS transaction status smoke › QRY-STS-001 - status awal pending setelah generate QRIS dynamic / initial pending status after generate dynamic QRIS" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="1.155">
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-002 - status approved setelah inject sandbox / approved status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="4.733">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-4061f-tus-after-sandbox-injection-api-query-qris/error-context.md]]
+
+[[ATTACHMENT|../artifacts/api-query-qris-query-qris.-4061f-tus-after-sandbox-injection-api-query-qris-retry1/error-context.md]]
+]]>
+</system-out>
+<error message="apiRequestContext.post: read ECONNRESET" type="Error">
+<![CDATA[  [api-query-qris] › api/query-qris/query-qris.status-smoke.spec.ts:16:9 › Query QRIS transaction status smoke › QRY-STS-002 - status approved setelah inject sandbox / approved status after sandbox injection 
+
+    Error: apiRequestContext.post: read ECONNRESET
+    Call log:
+      - → POST https://qris-sandbox.cashup.id/?/pay
+        - user-agent: Playwright/1.61.1 (x64; ubuntu 24.04) node/22.23 CI/1
+        - accept: application/json
+        - accept-encoding: gzip,deflate,br
+        - origin: https://qris-sandbox.cashup.id
+        - referer: https://qris-sandbox.cashup.id/
+        - x-sveltekit-action: true
+        - content-type: application/x-www-form-urlencoded
+        - content-length: 298
+
+
+       at ../src/features/query-qris/qris-payment-sandbox.client.ts:26
+
+      24 |   }): Promise<QrisSandboxInjectionResult> {
+      25 |     const startedAt = Date.now();
+    > 26 |     const response = await this.request.post(`${this.sandboxUrl}/?/pay`, {
+         |                                         ^
+      27 |       headers: {
+      28 |         accept: 'application/json',
+      29 |         origin: this.sandboxUrl,
+        at QrisPaymentSandboxClient.injectOutcome (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/query-qris/qris-payment-sandbox.client.ts:26:41)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.status-smoke.spec.ts:30:60
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-4061f-tus-after-sandbox-injection-api-query-qris/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: apiRequestContext.post: read ECONNRESET
+    Call log:
+      - → POST https://qris-sandbox.cashup.id/?/pay
+        - user-agent: Playwright/1.61.1 (x64; ubuntu 24.04) node/22.23 CI/1
+        - accept: application/json
+        - accept-encoding: gzip,deflate,br
+        - origin: https://qris-sandbox.cashup.id
+        - referer: https://qris-sandbox.cashup.id/
+        - x-sveltekit-action: true
+        - content-type: application/x-www-form-urlencoded
+        - content-length: 298
+
+
+       at ../src/features/query-qris/qris-payment-sandbox.client.ts:26
+
+      24 |   }): Promise<QrisSandboxInjectionResult> {
+      25 |     const startedAt = Date.now();
+    > 26 |     const response = await this.request.post(`${this.sandboxUrl}/?/pay`, {
+         |                                         ^
+      27 |       headers: {
+      28 |         accept: 'application/json',
+      29 |         origin: this.sandboxUrl,
+        at QrisPaymentSandboxClient.injectOutcome (/home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/src/features/query-qris/qris-payment-sandbox.client.ts:26:41)
+        at /home/runner/work/tsd-qris-api-playwright/tsd-qris-api-playwright/tests/api/query-qris/query-qris.status-smoke.spec.ts:30:60
+
+    Error Context: ../reports/artifacts/api-query-qris-query-qris.-4061f-tus-after-sandbox-injection-api-query-qris-retry1/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-003 - status expired setelah inject sandbox / expired status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="1.767">
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-004 - status declined setelah inject sandbox / declined status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="0.716">
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-005 - status refunded setelah inject sandbox / refunded status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="0.684">
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-006 - status canceled setelah inject sandbox / canceled status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="0.674">
+</testcase>
+<testcase name="Query QRIS transaction status smoke › QRY-STS-007 - status failed setelah inject sandbox / failed status after sandbox injection" classname="api/query-qris/query-qris.status-smoke.spec.ts" time="0.663">
+</testcase>
+</testsuite>
+<testsuite name="api/refund-qris/refund-qris.smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-refund-qris" tests="1" failures="0" skipped="0" time="2.047" errors="0">
+<testcase name="Refund QRIS smoke › RFN-SMK-001 - refund sukses untuk transaksi QRIS approved lalu query status refunded / successful refund for approved QRIS transaction then query refunded status" classname="api/refund-qris/refund-qris.smoke.spec.ts" time="2.047">
+</testcase>
+</testsuite>
+<testsuite name="api/cancel-qris/cancel-qris.smoke.spec.ts" timestamp="2026-07-13T07:46:04.170Z" hostname="api-cancel-qris" tests="2" failures="0" skipped="0" time="2.855" errors="0">
+<testcase name="Cancel QRIS smoke › CNL-SMK-001 - cancel sukses untuk transaksi QRIS pending lalu query status canceled / successful cancel for pending QRIS transaction then query canceled status" classname="api/cancel-qris/cancel-qris.smoke.spec.ts" time="1.427">
+</testcase>
+<testcase name="Cancel QRIS smoke › CNL-SMK-002 - cancel sukses untuk transaksi QRIS approved lalu query status canceled / successful cancel for approved QRIS transaction then query canceled status" classname="api/cancel-qris/cancel-qris.smoke.spec.ts" time="1.428">
+</testcase>
+</testsuite>
+</testsuites>

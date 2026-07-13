@@ -35,6 +35,12 @@ body {
   color: #fff;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .eyebrow {
   margin: 0 0 6px;
   color: #9db6ff;
@@ -374,6 +380,7 @@ pre {
 
 @media (max-width: 680px) {
   .page-header,
+  .header-actions,
   .recommendation,
   .section-header {
     align-items: flex-start;

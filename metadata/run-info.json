@@ -1,0 +1,15 @@
+{
+  "projectName": "CashUp SNAP QRIS API Automation",
+  "environment": "SIT",
+  "baseUrl": "https://tucanos-sayonara.cashup.id/qris-snap",
+  "executedAtJakarta": "13/07/2026, 14:47:21",
+  "branch": "main",
+  "commitSha": "f37a****",
+  "buildNumber": "5",
+  "triggeredBy": "izammm27",
+  "workers": "1",
+  "totalDurationMs": 77539.95199999999,
+  "playwrightVersion": "1.61.1",
+  "nodeVersion": "v22.23.1",
+  "status": "FAILED"
+}
