@@ -267,7 +267,7 @@ function renderTable() {
           '</span></td></tr><tr id="' +
           evidenceId +
           '" class="evidence-row" hidden><td colspan="15">' +
-          renderEvidence(test) +
+          renderEvidence(test, evidenceId) +
           '</td></tr>'
         );
       })
@@ -292,24 +292,67 @@ function renderTable() {
   });
 }
 
-function renderEvidence(test) {
-  const expected = test.evidence?.expected || {};
+function renderEvidence(test, evidenceId) {
   const request = test.evidence?.request || {};
   const response = test.evidence?.response || {};
   const stack = test.stack || 'N/A';
+  const comparison = {
+    httpStatus: { expected: test.expectedHttpStatus, actual: test.actualHttpStatus },
+    responseCode: { expected: test.expectedResponseCode, actual: test.actualResponseCode },
+    responseMessage: {
+      expected: test.expectedResponseMessage,
+      actual: test.actualResponseMessage
+    }
+  };
+  const source = {
+    file: test.sourceFile,
+    line: test.line || 'N/A',
+    project: test.projectName,
+    nativeReport: test.nativeReportLink
+  };
+  const attempt = {
+    attempt: typeof test.attemptIndex === 'number' ? test.attemptIndex + 1 : 'N/A',
+    retry: typeof test.retryIndex === 'number' ? test.retryIndex : 'N/A',
+    status: test.status
+  };
   return (
     '<div class="evidence-grid">' +
-    evidenceBlock('Expected', expected, test.id + '-expected') +
-    evidenceBlock('Request', request, test.id + '-request') +
-    evidenceBlock('Response', response, test.id + '-response') +
+    evidenceBlock(
+      'Primary Failure',
+      { reason: test.primaryFailure, source: test.failureSource },
+      evidenceId + '-primary'
+    ) +
+    textBlock('Assertion Detail', test.assertionDetail || 'N/A', evidenceId + '-assertion') +
+    evidenceBlock('Expected vs Actual', comparison, evidenceId + '-comparison') +
+    evidenceBlock('Request Evidence', request, evidenceId + '-request') +
+    evidenceBlock('Response Evidence', response, evidenceId + '-response') +
+    evidenceBlock('Source', source, evidenceId + '-source') +
+    evidenceBlock('Retry / Attempt', attempt, evidenceId + '-attempt') +
     '</div>' +
-    '<details><summary>Failure stack</summary><pre id="' +
-    test.id +
+    (test.allErrors.length > 1
+      ? evidenceBlock('All Playwright Errors', test.allErrors, evidenceId + '-errors')
+      : '') +
+    '<details><summary>Technical Stack</summary><pre id="' +
+    evidenceId +
     '-stack">' +
     escapeHtml(stack) +
     '</pre><button class="copy-button" type="button" data-copy="' +
-    test.id +
+    evidenceId +
     '-stack">Copy</button></details>'
+  );
+}
+
+function textBlock(title, value, id) {
+  return (
+    '<details><summary>' +
+    escapeHtml(title) +
+    '</summary><pre id="' +
+    id +
+    '">' +
+    escapeHtml(value) +
+    '</pre><button class="copy-button" type="button" data-copy="' +
+    id +
+    '">Copy</button></details>'
   );
 }
 
